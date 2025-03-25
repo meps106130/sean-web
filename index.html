@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sean的個人網頁</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="website icon" type="image/png" href="sean_img.png">
+</head>
+<body>
+    <header>
+        <h1 id="flashingTitle">sean的個人網頁</h1>
+        <p>探索我的網站...</p>
+        <button id="nightModeButton" onclick="toggleNightMode()">切換夜間模式</button>
+        <select id="languageSelect" onchange="changeLanguage(this)">
+            <option value="zh-Hant">繁體中文(chinese)</option>
+            <option value="en">英文(English)</option>
+        </select>
+    </header>
+
+    <nav>
+        <div class="button-container">
+            <button class="nav-button" id="homeButton" onclick="loadPage('home')">首頁</button>
+            <button class="nav-button" id="aboutButton" onclick="loadPage('about')">我的資訊</button>
+            <button class="nav-button" id="contactButton" onclick="loadPage('contact')">聯絡方式</button>
+            <button class="nav-button" id="questionButton" onclick="loadPage('question')">提問</button>
+        </div>
+    </nav>
+
+    <main id="mainContent">
+        <p>請選擇上方的選項來瀏覽我的網站內容。</p>
+        <h2>.</h2>
+        <h2>.</h2>
+        <h2>.</h2>
+        <h2>.</h2>
+        <h2>.</h2>
+        <h2>.</h2>
+        <h2>.</h2>
+        <h2>.</h2>
+        <h2>.</h2>
+        <h2>.</h2>
+        <h2>.</h2>
+        <h2>XD</h2>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 sean | 個人網頁</p>
+    </footer>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
