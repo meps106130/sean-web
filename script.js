@@ -69,7 +69,7 @@ function changeLanguage(selectElement) {
             </ul>
             <h2>my friend web</h2>
             <ul>
-                <li><a href="https://hung-liu.github.io/">hung's web</li>
+                <li><a href="https://hung-liu.github.io/">hung's web</a></li>
             </ul>
             <h2>Image</h2>
             <img src="MTA.png"/>
@@ -157,7 +157,7 @@ function changeLanguage(selectElement) {
             </ul>
             <h2>好友的網站</h2>
             <ul>
-                <li><a href="https://hung-liu.github.io/">hung's web</li>
+                <li><a href="https://hung-liu.github.io/">hung's web</a></li>
             </ul>
             <h2>圖片</h2>
             <img src="MTA.png"/>
@@ -244,7 +244,7 @@ const pages = {
         </ul>
             <h2>好友的網站</h2>
         <ul>
-            <li><a href="https://hung-liu.github.io/">hung's web</li>
+            <li><a href="https://hung-liu.github.io/">hung's web</a></li>
         </ul>
         <h2>圖片</h2>
         <img src="MTA.png"/>
