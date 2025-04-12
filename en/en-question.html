@@ -30,19 +30,31 @@
     <main id="mainContent">
         <h2>Ask a Question</h2>
         <form id="questionForm">
-            <label for="userName">Your Name:</label>
-            <input type="text" id="userName" name="from_name" required>
-
-            <label for="userEmail">Your Email:</label>
-            <input type="email" id="userEmail" name="from_email" required>
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Name" required="">
+                <label for="name" class="form__label">Your Name:</label>
+            </div>
+            
+            <div class="form__group field">
+                <input type="email" class="form__field" placeholder="Name" required="">
+                <label for="name" class="form__label">Your Email:</label>
+            </div>
 
             <label for="userQuestion">Your Question:</label>
             <textarea id="userQuestion" name="message" rows="5" required></textarea>
 
+            <!-- <label for="userEmail">你的電子郵件：</label>
+            <input type="email" id="userEmail" name="from_email" required>
+
+            <label for="userQuestion">你的提問：</label>
+            <textarea id="userQuestion" name="message" rows="5" required></textarea>
+            -->
             <button type="submit">Submit Question</button>
+
         </form>
         <div id="formStatus" style="display: none;"></div>
     </main>
+
 
     <footer>
         <p>&copy; 2025 sean | Personal Website</p>
