@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sean的個人網頁</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" type="image/png" href="../sean_img.png">
+
+</head>
+<body>
+    <header>
+        <h1 id="flashingTitle">sean的個人網頁</h1>
+        <p>國家一級保育類廢物，專業擅長裝死、擺爛與耍廢，生存全靠世界的寬容與朋友的容忍，堪稱行走的社會資源浪費奇蹟</p>
+        <button id="nightModeButton" onclick="toggleNightMode()">切換夜間模式</button>
+        <!-- <select id="languageSelect" onchange="changeLanguage(this)"> -->
+            <select id="languageSelect" onchange="if(this.value) location.href=this.value;">
+                <option value="" selected>繁體中文 (Chinese)</option>
+                <option value="../en/en-home.html">英文 (English)</option>
+            </select>
+            
+    </header>
+
+    <nav>
+        <div class="button-container">
+            <button class="nav-button" id="homeButton" onclick="location.href='home.html'">首頁</button>
+            <button class="nav-button" id="aboutButton" onclick="location.href='about.html'">我的資訊</button>
+            <button class="nav-button" id="contactButton" onclick="location.href='contact.html'">聯絡方式</button>
+            <button class="nav-button" id="questionButton" >提問</button>
+        </div>
+    </nav>
+
+    <main id="mainContent">
+        <h2>留下你的問題</h2>
+        <form id="questionForm">
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Name" required="">
+                <label for="name" class="form__label">名字</label>
+            </div>
+            
+            <div class="form__group field">
+                <input type="email" class="form__field" placeholder="mail" required="">
+                <label for="name" class="form__label">你的email</label>
+            </div>
+
+            <label for="userQuestion">你的提問：</label>
+            <textarea id="userQuestion" name="message" rows="5" required></textarea>
+
+            <!-- <label for="userEmail">你的電子郵件：</label>
+            <input type="email" id="userEmail" name="from_email" required>
+
+            <label for="userQuestion">你的提問：</label>
+            <textarea id="userQuestion" name="message" rows="5" required></textarea>
+            -->
+
+
+
+
+            
+            <button type="submit">送出提問</button>
+
+        </form>
+        <div id="formStatus" style="display: none;"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 sean | 個人網頁</p>
+    </footer>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
